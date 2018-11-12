@@ -18,6 +18,10 @@ app.get("/about", (req,res) => {
   res.render("about.hbs");
 });
 
+app.get("/new", (req,res) => {
+  res.render("new.hbs");
+});
+
 app.get("/bad", (req,res) => {
   res.send({
     errorMessage: "Unable to fulfill the request"
